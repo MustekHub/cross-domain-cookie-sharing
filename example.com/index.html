@@ -4,12 +4,12 @@
 	<title>Example.com Domain </title>
 </head>
 <body>
-<iframe style="display:none;" src="http://example2.com/getlocalstorage.html" id="ifr"></iframe>
+<iframe style="display:none;" src="https://example2.com/getlocalstorage.html" id="ifr"></iframe>
 	
 <script type="text/javascript">
 function postCrossDomainMessage(msg) {
   var win = document.getElementById('ifr').contentWindow;
-  win.postMessage(msg, "http://example2.com/");
+  win.postMessage(msg, "https://example2.com/");
 }
 var postMsg = {"login": "user"}; // this is just example
 postCrossDomainMessage(postMsg);
