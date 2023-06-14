@@ -17,7 +17,7 @@ www.example.com/index.html
 ```
 function postCrossDomainMessage(msg) {
   var win = document.getElementById('ifr').contentWindow;
-  win.postMessage(msg, "http://example.com/");
+  win.postMessage(msg, "https://example.com/");
 }
 var postMsg = {"login": "user"}; // this is just example
 postCrossDomainMessage(postMsg);
